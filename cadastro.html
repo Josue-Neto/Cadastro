@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Cadastro Cliente</title> <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+    <h1>Filtro de Clientes</h1>
+    <p>Este sistema filtra os dados cadastrados no objeto javascript e traz apenas os clientes com idade >= 18 anos.</p>
+
+    <!-- Aparecerá em uma lista os usuários que atenderem ao critério de filtro-->
+    <ul id="listaClientesAdultos"></ul>
+    <!-- Este botão vai chamar a função que irá mostrar os clientes filtrados-->
+
+    <button id="button" class="btn btn-primary btn-lg" onclick="mostrarClientesAdultos()">Mostrar Clientes</button>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <h1>Cadastrar Novo Cliente</h1>
+
+    <br>
+
+    <!-- Campo para cadastro -->
+    <label>Nome:
+        <input type="text" id="nomeCliente">
+    </label>
+    <br>
+    <label>Idade:
+        <input type="number" id="idadeCliente">
+    </label>
+    <br>
+    <label>Email:
+        <input type="email" id="emailCliente">
+    </label>
+
+    <br>
+    <br>
+
+    <!-- Botão para cadastrar -->
+    <button onclick="cadastrarCliente()">Cadastrar Cliente</button>
+    <!-- Confirmação -->
+
+    <br>
+    <br>
+    <p id="mensagemCadastro">Mensagem de confirmação aqui...</p>
+    </main>
+
+</body>
+</html>
